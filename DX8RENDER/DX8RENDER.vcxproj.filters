@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fa023645-3d72-490c-855e-743cb7762af0}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e36f5037-efcb-4e5c-bf85-614f370bde69}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0e68c4e9-7bf1-4332-8350-8147b7acf9a5}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{9137b0a6-bf77-411d-843d-e05de70b2f16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Techniques">
+      <UniqueIdentifier>{4f5e74e8-6752-4440-84cf-fe68a97b9f88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Screenshot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Technique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common_h\dx8render.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sdevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Technique.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\COMMON_H\VideoTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Engine\modules\techniques\PostProcess\blur.sha">
+      <Filter>Data\Techniques</Filter>
+    </None>
+    <None Include="..\Engine\modules\techniques\PostProcess\glow.sha">
+      <Filter>Data\Techniques</Filter>
+    </None>
+    <None Include="..\Engine\modules\techniques\PostProcess\pp.sha">
+      <Filter>Data\Techniques</Filter>
+    </None>
+    <None Include="..\Engine\Modules\Techniques\RDebug\Vector.sha">
+      <Filter>Data\Techniques</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Engine\glow.txt" />
+  </ItemGroup>
+</Project>

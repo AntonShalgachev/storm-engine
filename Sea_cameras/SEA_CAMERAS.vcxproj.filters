@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{171508c8-ed1b-4611-86ab-fa66cc66d4de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FreeCamera Files">
+      <UniqueIdentifier>{380fa1d1-9c21-4286-907f-0f92c0cbee15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShipCamera Files">
+      <UniqueIdentifier>{d91dbcae-4a95-4eaa-93d2-da977473680e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeckCamera">
+      <UniqueIdentifier>{1fa1e126-b8ae-4a08-bf77-28697fcf8455}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common_Camera.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SEA_CAMERAS.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeCamera.h">
+      <Filter>FreeCamera Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShipCamera.h">
+      <Filter>ShipCamera Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckCamera.h">
+      <Filter>DeckCamera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SEA_CAMERAS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeCamera.cpp">
+      <Filter>FreeCamera Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShipCamera.cpp">
+      <Filter>ShipCamera Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckCamera.cpp">
+      <Filter>DeckCamera</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

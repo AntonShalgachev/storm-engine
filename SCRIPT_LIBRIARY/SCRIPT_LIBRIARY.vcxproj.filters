@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7fade6d6-c58a-449d-9668-b58f0bd6b4c4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bfeaa10b-6b03-4fb1-9481-8d814dbd01db}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Users">
+      <UniqueIdentifier>{b1adeb25-b7c5-4d41-a9c7-baed32894162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Users\Vano Files">
+      <UniqueIdentifier>{35f9f88e-59fa-431f-b869-2a34ee0222aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{6ce636cf-b2bd-420d-bed1-dc0bb0023daa}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="script_libriary_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vano_files.cpp">
+      <Filter>Users\Vano Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="script_libriary_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vano_files.h">
+      <Filter>Users\Vano Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="PARTICLES">
+      <UniqueIdentifier>{a79762cb-75e2-4fc5-aed9-d19122b04967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ALIASES">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="INTERFACES">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="INTERFACES\Net">
+      <UniqueIdentifier>{7a45d4f2-893b-4595-a434-d47da5aad56b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INTERFACES\Utils">
+      <UniqueIdentifier>{c9e18a40-0db4-4229-9b2b-80cc12e1813f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS">
+      <UniqueIdentifier>{72780a1e-1b15-47fb-970d-169f376d2791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Russian">
+      <UniqueIdentifier>{67485e58-d31d-40e4-a37e-fa2cdf308609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Russian\HELPSECTIONS">
+      <UniqueIdentifier>{6f94cbdd-ac84-4573-8ec5-f50d39c64c5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Russian\QUESTBOOK">
+      <UniqueIdentifier>{77890a33-5b48-4416-af54-f71001a11ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\English">
+      <UniqueIdentifier>{1114a19c-39f0-4cf9-8115-26e95a9c1efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\English\QUESTBOOK">
+      <UniqueIdentifier>{190f028d-f86e-461b-aceb-5172dc49bb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\French">
+      <UniqueIdentifier>{87109a86-10f3-4c05-808f-9a1d1cb7fcbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\French\Questbook">
+      <UniqueIdentifier>{38f259ae-0567-4cdc-a447-31cc421deabd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\German">
+      <UniqueIdentifier>{b042ce2a-9479-459d-855d-1f58b0ec72aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\German\Questbook">
+      <UniqueIdentifier>{90867479-0a25-492d-9e98-76b89ca28dc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Italian">
+      <UniqueIdentifier>{d9dc39ae-859e-4795-94b1-0c223d21b17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Italian\Questbook">
+      <UniqueIdentifier>{ceb993fe-41c3-46d2-ac56-42c6a2e54ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Spanish">
+      <UniqueIdentifier>{73f1ffb8-4dc2-472b-8d5e-c9e6756b73a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TEXTS\Spanish\Questbook">
+      <UniqueIdentifier>{68123744-1412-447f-a285-c98dde45e099}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Particles\alcove.ini">
+      <Filter>PARTICLES</Filter>
+    </None>
+    <None Include="Particles\artifact.ini">
+      <Filter>PARTICLES</Filter>
+    </None>
+    <None Include="Particles\fort.ini">
+      <Filter>PARTICLES</Filter>
+    </None>
+    <None Include="Particles\particles.ini">
+      <Filter>PARTICLES</Filter>
+    </None>
+    <None Include="Particles\ship_fire.ini">
+      <Filter>PARTICLES</Filter>
+    </None>
+    <None Include="aliases\Greetings_alias.ini">
+      <Filter>ALIASES</Filter>
+    </None>
+    <None Include="Aliases\max.ini">
+      <Filter>ALIASES</Filter>
+    </None>
+    <None Include="Aliases\music_alias.ini">
+      <Filter>ALIASES</Filter>
+    </None>
+    <None Include="Aliases\sound_alias.ini">
+      <Filter>ALIASES</Filter>
+    </None>
+    <None Include="Interfaces\AskForHelp.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\CareerMoney.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\character.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\ColonyInfo.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\ColonyManagement.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\defaultnode.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\disease_alert.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\endgame.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="interfaces\engine_video.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\FoodInfo.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\fortcapture.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\game_menu.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="interfaces\game_menu_eng.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\hirecrew.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\HireOfficer.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\interfaces.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\items.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\itemsbox.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\itemstrade.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\LanguageSelect.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\mainmenu.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\map.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\MessageBox.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\option_screen.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\PaperMap.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\perks.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\pictures.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\playgame.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\QuestBook.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="interfaces\quick_save.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\ransack_main.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\RiotResult.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\salary.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\save_load.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\select_menu.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\selectCharacter.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\ship.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\shipyard.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\Speak.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\store.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\TradeBook.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\Transfer_main.ini">
+      <Filter>INTERFACES</Filter>
+    </None>
+    <None Include="Interfaces\Net\Buy.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\Net\Chat.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="interfaces\net\ChatString.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\Net\CreateGame.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="interfaces\net\Dedicated.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\net\EndGame.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\Net\FindGame.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\Net\GameState.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\net\NetMenu.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\net\PlayerSettings.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\Net\TopList.ini">
+      <Filter>INTERFACES\Net</Filter>
+    </None>
+    <None Include="Interfaces\Utils\IconsSelector.ini">
+      <Filter>INTERFACES\Utils</Filter>
+    </None>
+    <None Include="Interfaces\Utils\MessageBox.ini">
+      <Filter>INTERFACES\Utils</Filter>
+    </None>
+    <None Include="Texts\language.ini">
+      <Filter>TEXTS</Filter>
+    </None>
+    <None Include="Texts\Russian\common.ini">
+      <Filter>TEXTS\Russian</Filter>
+    </None>
+    <None Include="texts\english\common.ini">
+      <Filter>TEXTS\English</Filter>
+    </None>
+    <None Include="texts\french\common.ini">
+      <Filter>TEXTS\French</Filter>
+    </None>
+    <None Include="texts\german\common.ini">
+      <Filter>TEXTS\German</Filter>
+    </None>
+    <None Include="texts\italian\common.ini">
+      <Filter>TEXTS\Italian</Filter>
+    </None>
+    <None Include="texts\spanish\common.ini">
+      <Filter>TEXTS\Spanish</Filter>
+    </None>
+    <None Include="animals.ini" />
+    <None Include="camera.ini" />
+    <None Include="cannons.ini" />
+    <None Include="dialog.ini" />
+    <None Include="fonts.ini" />
+    <None Include="fonts_rus.ini" />
+    <None Include="fonts_rus.old" />
+    <None Include="geo.ini" />
+    <None Include="helpchooser.ini" />
+    <None Include="lights.ini" />
+    <None Include="loclighter.ini" />
+    <None Include="mast.ini" />
+    <None Include="particles.ini" />
+    <None Include="rigging.ini" />
+    <None Include="shiplights.ini" />
+    <None Include="sound_scheme.ini" />
+    <None Include="telescope.ini" />
+    <None Include="TextureSequence.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Texts\Russian\AbilityDescribe.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\commands_name.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\ControlsNames.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\dialogsource.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\globals.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\GoodsDescribe.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\HelpSectionTitles.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\interface_strings.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\ItemsDescribe.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\LocLables.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="texts\russian\NetSection.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\SeaSection.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\ShipEatGood.txt">
+      <Filter>TEXTS\Russian</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\alarm_indicator.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\Dialog_window.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\fast_commands.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\land_command_menu.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\navigator_minimap.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\sea_aim.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\ships_command_menu.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\WorldMap_ClockWeather.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Helpsections\WorldMap_Compas.txt">
+      <Filter>TEXTS\Russian\HELPSECTIONS</Filter>
+    </Text>
+    <Text Include="Texts\Russian\Questbook\quests_texts.txt">
+      <Filter>TEXTS\Russian\QUESTBOOK</Filter>
+    </Text>
+    <Text Include="texts\english\AbilityDescribe.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\commands_name.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\ControlsNames.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\dialogsource.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\globals.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\GoodsDescribe.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\HelpSectionTitles.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\interface_strings.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\ItemsDescribe.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\LocLables.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\NetSection.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\SeaSection.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\ShipEatGood.txt">
+      <Filter>TEXTS\English</Filter>
+    </Text>
+    <Text Include="texts\english\Questbook\quests_texts.txt">
+      <Filter>TEXTS\English\QUESTBOOK</Filter>
+    </Text>
+    <Text Include="texts\french\AbilityDescribe.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\commands_name.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\ControlsNames.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\dialogsource.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\globals.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\GoodsDescribe.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\HelpSectionTitles.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\interface_strings.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\ItemsDescribe.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\LocLables.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\NetSection.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\SeaSection.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\ShipEatGood.txt">
+      <Filter>TEXTS\French</Filter>
+    </Text>
+    <Text Include="texts\french\Questbook\quests_texts.txt">
+      <Filter>TEXTS\French\Questbook</Filter>
+    </Text>
+    <Text Include="texts\german\AbilityDescribe.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\commands_name.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\ControlsNames.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\dialogsource.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\globals.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\GoodsDescribe.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\HelpSectionTitles.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\interface_strings.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\ItemsDescribe.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\LocLables.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\NetSection.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\SeaSection.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\ShipEatGood.txt">
+      <Filter>TEXTS\German</Filter>
+    </Text>
+    <Text Include="texts\german\Questbook\quests_texts.txt">
+      <Filter>TEXTS\German\Questbook</Filter>
+    </Text>
+    <Text Include="texts\italian\AbilityDescribe.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\commands_name.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\ControlsNames.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\dialogsource.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\globals.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\GoodsDescribe.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\HelpSectionTitles.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\interface_strings.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\ItemsDescribe.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\LocLables.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\NetSection.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\SeaSection.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\ShipEatGood.txt">
+      <Filter>TEXTS\Italian</Filter>
+    </Text>
+    <Text Include="texts\italian\Questbook\quests_texts.txt">
+      <Filter>TEXTS\Italian\Questbook</Filter>
+    </Text>
+    <Text Include="texts\spanish\AbilityDescribe.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\commands_name.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\ControlsNames.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\dialogsource.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\globals.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\GoodsDescribe.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\HelpSectionTitles.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\interface_strings.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\ItemsDescribe.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\LocLables.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\NetSection.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\SeaSection.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\ShipEatGood.txt">
+      <Filter>TEXTS\Spanish</Filter>
+    </Text>
+    <Text Include="texts\spanish\Questbook\quests_texts.txt">
+      <Filter>TEXTS\Spanish\Questbook</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

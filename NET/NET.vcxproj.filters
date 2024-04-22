@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{bd5a3277-ebbc-4f56-9882-a40767331106}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{4ff70e36-5f22-4ab7-a30c-3228bc70e578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server\LocalClient">
+      <UniqueIdentifier>{c1e7d5bd-2a27-4a92-9134-1db40f05c249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Client">
+      <UniqueIdentifier>{be928600-faf7-4acf-81e4-82c436423c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CRC">
+      <UniqueIdentifier>{964cd60b-d6df-4f26-9257-9c41fdcded7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{f51ec35b-2b64-4b4f-8ea3-4b3fd99c9168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Script">
+      <UniqueIdentifier>{0e428d18-436e-4022-810e-f48185570c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{ea27e8db-43e8-4dd0-9eb1-2652fb609c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetChat">
+      <UniqueIdentifier>{245432ea-009a-4523-92c0-07aacd610650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetShip">
+      <UniqueIdentifier>{e8d3e307-e5bf-426d-bc71-0bc4719987f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetSea">
+      <UniqueIdentifier>{c7d0eb58-e556-44b6-b2c2-1205c9b1b89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetConsole">
+      <UniqueIdentifier>{9cd98b9a-d6db-4333-8461-684a814f597e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetWeather">
+      <UniqueIdentifier>{e8bea002-21d7-4bbe-839c-fa158ad8052d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetWeather\Sky">
+      <UniqueIdentifier>{84de1746-6e27-4b93-9eb5-8e6a1850b630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetWeather\SunGlow">
+      <UniqueIdentifier>{228428db-5644-480f-b429-1f7564396782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetWeather\Rain">
+      <UniqueIdentifier>{92edc336-b5f4-4660-93a0-d4f3c41a5694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetWeather\Lightning">
+      <UniqueIdentifier>{1db250c6-67c3-4a27-ac2b-0759be0f6838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetTouch">
+      <UniqueIdentifier>{05e3a18f-c1a9-4dca-a8f0-9d60af5d6bf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetCamera">
+      <UniqueIdentifier>{40fdee13-9ec5-41cc-9bd8-735c27d28fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetBalls">
+      <UniqueIdentifier>{acd5dbe3-dfaa-4961-b7a6-2fbfbda9f2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetRigging">
+      <UniqueIdentifier>{180580a5-2b12-4e13-9eb5-c6ebcff9ba30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetCannons">
+      <UniqueIdentifier>{f396afb2-507a-4df1-a24c-2e5acb2004bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetIsland">
+      <UniqueIdentifier>{c89d643c-82ea-41e5-b684-0b7dc85267f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetFort">
+      <UniqueIdentifier>{9fcf0cc4-b759-49c2-9cf6-4da78e5f87d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\NetLightPillar">
+      <UniqueIdentifier>{f1e9d753-43f7-44c9-b7c1-7a575f8a6685}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="net.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common_h\Net.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NetMessage.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Nurbs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Source Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalClient.h">
+      <Filter>Source Files\Server\LocalClient</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Source Files\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC.h">
+      <Filter>Source Files\CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="NetFile\NetFile.h">
+      <Filter>Source Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Chat\Say.h">
+      <Filter>Entities\NetChat</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ship\CannonController.h">
+      <Filter>Entities\NetShip</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ship\FirePlace.h">
+      <Filter>Entities\NetShip</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ship\ship.h">
+      <Filter>Entities\NetShip</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ship\ShipLights.h">
+      <Filter>Entities\NetShip</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Ship\Track.h">
+      <Filter>Entities\NetShip</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Sea\sea.h">
+      <Filter>Entities\NetSea</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Weather\Weather.h">
+      <Filter>Entities\NetWeather</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Weather\Sky.h">
+      <Filter>Entities\NetWeather\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Weather\SunGlow.h">
+      <Filter>Entities\NetWeather\SunGlow</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Weather\Rain.h">
+      <Filter>Entities\NetWeather\Rain</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Weather\Lightning.h">
+      <Filter>Entities\NetWeather\Lightning</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Touch\touch.h">
+      <Filter>Entities\NetTouch</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Camera\Common_Camera.h">
+      <Filter>Entities\NetCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Camera\DeckCamera.h">
+      <Filter>Entities\NetCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Camera\ShipCamera.h">
+      <Filter>Entities\NetCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Balls\NetBalls.h">
+      <Filter>Entities\NetBalls</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\Flag.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\mast.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\rigging_define.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\Rope.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\sail.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\SAILONE.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Rigging\Vant.h">
+      <Filter>Entities\NetRigging</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Cannons\Cannon.h">
+      <Filter>Entities\NetCannons</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\island\Foam.h">
+      <Filter>Entities\NetIsland</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Island\ISLAND.h">
+      <Filter>Entities\NetIsland</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Fort\Fort.h">
+      <Filter>Entities\NetFort</Filter>
+    </ClInclude>
+    <ClInclude Include="entities\lightpillar\pillar.h">
+      <Filter>Entities\NetLightPillar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalClient.cpp">
+      <Filter>Source Files\Server\LocalClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Source Files\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC16.cpp">
+      <Filter>Source Files\CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC32.cpp">
+      <Filter>Source Files\CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="NetFile\NetFileRecv.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="NetFile\NetFileSend.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Chat\Say.cpp">
+      <Filter>Entities\NetChat</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ship\CannonController.cpp">
+      <Filter>Entities\NetShip</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ship\FirePlace.cpp">
+      <Filter>Entities\NetShip</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ship\ship.cpp">
+      <Filter>Entities\NetShip</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ship\ship_utils.cpp">
+      <Filter>Entities\NetShip</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ship\ShipLights.cpp">
+      <Filter>Entities\NetShip</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Ship\Track.cpp">
+      <Filter>Entities\NetShip</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Sea\EnvMap.cpp">
+      <Filter>Entities\NetSea</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Sea\sea.cpp">
+      <Filter>Entities\NetSea</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Weather\Weather.cpp">
+      <Filter>Entities\NetWeather</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Weather\Sky.cpp">
+      <Filter>Entities\NetWeather\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Weather\SunGlow.cpp">
+      <Filter>Entities\NetWeather\SunGlow</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Weather\Rain.cpp">
+      <Filter>Entities\NetWeather\Rain</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Weather\Lightning.cpp">
+      <Filter>Entities\NetWeather\Lightning</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Touch\touch.cpp">
+      <Filter>Entities\NetTouch</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Camera\DeckCamera.cpp">
+      <Filter>Entities\NetCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Camera\ShipCamera.cpp">
+      <Filter>Entities\NetCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Balls\NetBalls.cpp">
+      <Filter>Entities\NetBalls</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Rigging\Flag.cpp">
+      <Filter>Entities\NetRigging</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Rigging\mast.cpp">
+      <Filter>Entities\NetRigging</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Rigging\Rope.cpp">
+      <Filter>Entities\NetRigging</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Rigging\sail.cpp">
+      <Filter>Entities\NetRigging</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Rigging\SAILONE.cpp">
+      <Filter>Entities\NetRigging</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Rigging\Vant.cpp">
+      <Filter>Entities\NetRigging</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Cannons\Cannon.cpp">
+      <Filter>Entities\NetCannons</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\island\Foam.cpp">
+      <Filter>Entities\NetIsland</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Island\ISLAND.cpp">
+      <Filter>Entities\NetIsland</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Island\MapZipper.cpp">
+      <Filter>Entities\NetIsland</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Island\ZapSuperGenerator.cpp">
+      <Filter>Entities\NetIsland</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Fort\Fort.cpp">
+      <Filter>Entities\NetFort</Filter>
+    </ClCompile>
+    <ClCompile Include="entities\lightpillar\pillar.cpp">
+      <Filter>Entities\NetLightPillar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Script\NetFile.inl">
+      <Filter>Source Files\Script</Filter>
+    </None>
+    <None Include="Script\NetInet.inl">
+      <Filter>Source Files\Script</Filter>
+    </None>
+    <None Include="Script\NetMessage.inl">
+      <Filter>Source Files\Script</Filter>
+    </None>
+    <None Include="Script\NetSocket.inl">
+      <Filter>Source Files\Script</Filter>
+    </None>
+  </ItemGroup>
+</Project>

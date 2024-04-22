@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Location">
+      <UniqueIdentifier>{15da3273-66a8-47f3-a0da-898fd448907b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\Location">
+      <UniqueIdentifier>{57909165-3a30-47b1-a791-5ed997dee8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\ModelArray">
+      <UniqueIdentifier>{d875fa54-50ec-48ec-9f61-f8d825bdb465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\LocatorArray">
+      <UniqueIdentifier>{896f0be4-572d-48f2-a7a4-f614af1c982e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\LocationEffects">
+      <UniqueIdentifier>{8fccaf29-93e9-4212-890e-a8a7faf898b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\Lights">
+      <UniqueIdentifier>{3d36ee2a-6929-4a73-b680-d48f1000bd2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\Ptc">
+      <UniqueIdentifier>{e624d42a-9adf-4e8f-bce0-18cdcc99fff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Location\LocationScriptLib">
+      <UniqueIdentifier>{2e67b58a-578e-4135-bc08-05b2881cc77b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{5d3c8974-3c10-4661-aef0-68f3afc63f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Character">
+      <UniqueIdentifier>{ac408041-b028-4b85-b500-9d8158e78354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\AICharacter">
+      <UniqueIdentifier>{b749b8dc-74ea-4995-abbc-49ab5eddc98e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\NPCharacter">
+      <UniqueIdentifier>{0eb69bcd-6926-462b-be25-e7cfc0a20a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Player">
+      <UniqueIdentifier>{5860ec41-4771-4253-9211-56b5cbec12c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\CharactersGroups">
+      <UniqueIdentifier>{ca1825d4-ac52-4840-82aa-28a9a5cee622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Supervisor">
+      <UniqueIdentifier>{f232416b-98c4-4c1a-90e8-5ea17daf28e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{1170dcca-5e3c-4ea4-9e33-6f6c672e4ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animals">
+      <UniqueIdentifier>{87794a43-03fa-476f-bb1c-75e587c423b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animals\LocLife">
+      <UniqueIdentifier>{7aa4a37d-e879-450e-8fa6-e07ec692b01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animals\Rats">
+      <UniqueIdentifier>{3c6028ad-6d56-4b85-bb45-97e9d712ac04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animals\Lizards">
+      <UniqueIdentifier>{1ea8c844-9f65-4ef7-856f-7bd3b930dff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animals\Eagle">
+      <UniqueIdentifier>{25123eae-3617-4804-a748-74da74461f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects">
+      <UniqueIdentifier>{6b058686-2a2d-4165-9985-ec61cc68bc02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Fader">
+      <UniqueIdentifier>{cb985e72-8757-4773-b8c0-83e40c4867a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\WideScreen">
+      <UniqueIdentifier>{1b973c2f-e633-4839-913a-474b5c231686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Grass">
+      <UniqueIdentifier>{daeac50c-afc2-4041-aaf8-440558f7f2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\CharacterAnimationKipper">
+      <UniqueIdentifier>{33402092-ef0f-4b36-b09d-573a6df12d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Blood">
+      <UniqueIdentifier>{0b4f18a7-390f-4c83-b896-47c86445128e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{159f598d-3dcb-4745-b6f1-a003b0106bfe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LocationMain.cpp">
+      <Filter>Location</Filter>
+    </ClCompile>
+    <ClCompile Include="Location.cpp">
+      <Filter>Location\Location</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelArray.cpp">
+      <Filter>Location\ModelArray</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelRealizer.cpp">
+      <Filter>Location\ModelArray</Filter>
+    </ClCompile>
+    <ClCompile Include="LocatorArray.cpp">
+      <Filter>Location\LocatorArray</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationEffects.cpp">
+      <Filter>Location\LocationEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Lights.cpp">
+      <Filter>Location\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="PtcData.cpp">
+      <Filter>Location\Ptc</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationScriptLib.cpp">
+      <Filter>Location\LocationScriptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Character\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="AICharacter.cpp">
+      <Filter>Character\AICharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="NPCharacter.cpp">
+      <Filter>Character\NPCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CharactersGroups.cpp">
+      <Filter>Character\CharactersGroups</Filter>
+    </ClCompile>
+    <ClCompile Include="Supervisor.cpp">
+      <Filter>Character\Supervisor</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraFollow.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="LocationCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="PathTracks.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="LocLife.cpp">
+      <Filter>Animals\LocLife</Filter>
+    </ClCompile>
+    <ClCompile Include="LocRat.cpp">
+      <Filter>Animals\Rats</Filter>
+    </ClCompile>
+    <ClCompile Include="LocRats.cpp">
+      <Filter>Animals\Rats</Filter>
+    </ClCompile>
+    <ClCompile Include="Lizard.cpp">
+      <Filter>Animals\Lizards</Filter>
+    </ClCompile>
+    <ClCompile Include="Lizards.cpp">
+      <Filter>Animals\Lizards</Filter>
+    </ClCompile>
+    <ClCompile Include="LocEagle.cpp">
+      <Filter>Animals\Eagle</Filter>
+    </ClCompile>
+    <ClCompile Include="Fader.cpp">
+      <Filter>Effects\Fader</Filter>
+    </ClCompile>
+    <ClCompile Include="WideScreen.cpp">
+      <Filter>Effects\WideScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="Grass.cpp">
+      <Filter>Effects\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterAnimationKipper.cpp">
+      <Filter>Effects\CharacterAnimationKipper</Filter>
+    </ClCompile>
+    <ClCompile Include="Blood.cpp">
+      <Filter>Effects\Blood</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Location.h">
+      <Filter>Location\Location</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelArray.h">
+      <Filter>Location\ModelArray</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelRealizer.h">
+      <Filter>Location\ModelArray</Filter>
+    </ClInclude>
+    <ClInclude Include="LocatorArray.h">
+      <Filter>Location\LocatorArray</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationEffects.h">
+      <Filter>Location\LocationEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="Lights.h">
+      <Filter>Location\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="ptc.h">
+      <Filter>Location\Ptc</Filter>
+    </ClInclude>
+    <ClInclude Include="PtcData.h">
+      <Filter>Location\Ptc</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationScriptLib.h">
+      <Filter>Location\LocationScriptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Character\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="AICharacter.h">
+      <Filter>Character\AICharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCharacter.h">
+      <Filter>Character\NPCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CharactersGroups.h">
+      <Filter>Character\CharactersGroups</Filter>
+    </ClInclude>
+    <ClInclude Include="Supervisor.h">
+      <Filter>Character\Supervisor</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraFollow.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraTracksFile.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="LocationCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="PathTracks.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="LocLife.h">
+      <Filter>Animals\LocLife</Filter>
+    </ClInclude>
+    <ClInclude Include="LocRat.h">
+      <Filter>Animals\Rats</Filter>
+    </ClInclude>
+    <ClInclude Include="LocRats.h">
+      <Filter>Animals\Rats</Filter>
+    </ClInclude>
+    <ClInclude Include="Lizard.h">
+      <Filter>Animals\Lizards</Filter>
+    </ClInclude>
+    <ClInclude Include="Lizards.h">
+      <Filter>Animals\Lizards</Filter>
+    </ClInclude>
+    <ClInclude Include="LocEagle.h">
+      <Filter>Animals\Eagle</Filter>
+    </ClInclude>
+    <ClInclude Include="Fader.h">
+      <Filter>Effects\Fader</Filter>
+    </ClInclude>
+    <ClInclude Include="WideScreen.h">
+      <Filter>Effects\WideScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="Grass.h">
+      <Filter>Effects\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="grs.h">
+      <Filter>Effects\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterAnimationKipper.h">
+      <Filter>Effects\CharacterAnimationKipper</Filter>
+    </ClInclude>
+    <ClInclude Include="Blood.h">
+      <Filter>Effects\Blood</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Engine\Resource\animation\ani.txt">
+      <Filter>Data</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Engine\Modules\Techniques\Effects\GrassEx.sha">
+      <Filter>Data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="HLSL.fx">
+      <Filter>Data</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
