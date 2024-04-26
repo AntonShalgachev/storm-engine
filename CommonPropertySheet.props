@@ -6,8 +6,9 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>$(SolutionDir)/extern/directx8/include</AdditionalIncludeDirectories>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)/extern/directx8/lib</AdditionalLibraryDirectories>

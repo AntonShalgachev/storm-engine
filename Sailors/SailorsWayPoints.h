@@ -155,7 +155,7 @@ inline float Dest( const CVECTOR &_v1, const CVECTOR &_v2){
 inline bool Dest( const CVECTOR &_v1, const CVECTOR &_v2, float d){
 
 
-	return (abs(_v2.x- _v1.x)< d && abs(_v2.y- _v1.y)< d && abs(_v2.z- _v1.z)< d);
+	return (fabs(_v2.x- _v1.x)< d && fabs(_v2.y- _v1.y)< d && fabs(_v2.z- _v1.z)< d);
 };
 
 

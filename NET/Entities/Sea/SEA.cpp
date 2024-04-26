@@ -1155,9 +1155,10 @@ dword NetSea::AttributeChanged(ATTRIBUTES * pAttribute)
 	return 0;
 }
 
-void SEA::LostRender()
+void NetSea::LostRender()
 {
 	if (!bSimpleSea)
+	{
 		Render().Release(pEnvMap);
 		Render().Release(pSunRoadMap);
 		Render().Release(pZStencil);
@@ -1166,11 +1167,11 @@ void SEA::LostRender()
 	{	
 		Render().Release(pReflection);
 		Render().Release(pReflectionSunroad);
-		Render().Release(pReflectionSurfaceDept);
+		Render().Release(pReflectionSurfaceDepth);
 	}
 }
 
-void SEA::RestoreRender()
+void NetSea::RestoreRender()
 {
 	if (!bSimpleSea)
 	{

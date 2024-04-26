@@ -44,6 +44,7 @@ public:
 	///Пустой конструктор
 	Triangle();
 	Triangle(const Vector * v);
+	Triangle(Triangle const& rhs);
 
 //-----------------------------------------------------------
 //Операторы
@@ -114,6 +115,13 @@ mathinline Triangle::Triangle(const Vector * v)
 	p[0] = v[0];
 	p[1] = v[1];
 	p[2] = v[2];
+}
+
+mathinline Triangle::Triangle(Triangle const& t)
+{
+    p1 = t.p1;
+    p2 = t.p2;
+    p3 = t.p3;
 }
 
 

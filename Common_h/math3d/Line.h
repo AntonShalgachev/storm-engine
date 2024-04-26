@@ -81,6 +81,7 @@ public:
 	Line(float f);
 	///Заполнить векторами
 	Line(const Vector & start, const Vector & end);
+	Line(const Line& rhs);
 
 
 //-----------------------------------------------------------
@@ -123,6 +124,12 @@ mathinline Line::Line(const Vector & start, const Vector & end)
 {
 	p1 = start;
 	p2 = end;
+}
+
+mathinline Line::Line(const Line& t)
+{
+	p1 = t.p1;
+	p2 = t.p2;
 }
 
 //===========================================================

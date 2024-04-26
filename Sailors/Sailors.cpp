@@ -106,9 +106,9 @@ bool ShipMan::RotateToAngle(dword &dltTime, SailorsPoints &sailorsPoints)
 {
 	GUARD_SAILORS(ShipMan::RotateToAngle())
 
-	if (abs(angTo.y- ang.y))
+	if (fabs(angTo.y- ang.y))
 	{ 
-		if (abs(ang.y- angTo.y)< PI) 
+		if (fabs(ang.y- angTo.y)< PI) 
 		{
 			if (angTo.y> ang.y) 
 				ang.y+= rotSpeed*dltTime/100.0f; else
@@ -124,7 +124,7 @@ bool ShipMan::RotateToAngle(dword &dltTime, SailorsPoints &sailorsPoints)
 		if (ang.y>= PI*2) ang.y-= PI*2;
 		if (ang.y<  0)    ang.y+= PI*2;
 
-		if (abs(float(angTo.y- ang.y))< rotSpeed*dltTime/100.0f) ang = angTo;
+		if (fabs(float(angTo.y- ang.y))< rotSpeed*dltTime/100.0f) ang = angTo;
 
 		return false;
 	};
@@ -339,7 +339,7 @@ bool ShipMan::MoveToPosition(dword &dltTime, SailorsPoints &sailorsPoints, ShipS
 
 	if (dFuture < dNow)
 	{
-		if (RotateToAngle(dltTime, sailorsPoints) || mode == MAN_RUN || (mode == MAN_WALK && abs(angTo.y- ang.y) < PI/8))
+		if (RotateToAngle(dltTime, sailorsPoints) || mode == MAN_RUN || (mode == MAN_WALK && fabs(angTo.y- ang.y) < PI/8))
 		{
 			pos.x+= manSpeed*dir.x*dltTime/100.0f;
 			pos.y+= manSpeed*dir.y*dltTime/100.0f;
