@@ -9,12 +9,6 @@
       <UniqueIdentifier>{e6b4bef3-ee5f-4a87-a3e9-b3ecfe30afe1}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
-    <Filter Include="FMOD">
-      <UniqueIdentifier>{565acfc2-dd21-452f-a2d5-f1194ade2fbb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="DLL">
-      <UniqueIdentifier>{7b435a73-d910-4eab-848d-e7d68d4fdc86}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DebugEntity.cpp">
@@ -46,38 +40,5 @@
     <ClInclude Include="VSoundService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Fmod4\api\inc\fmod.h">
-      <Filter>FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Fmod4\api\inc\fmod.hpp">
-      <Filter>FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Fmod4\api\inc\fmod_codec.h">
-      <Filter>FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Fmod4\api\inc\fmod_dsp.h">
-      <Filter>FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Fmod4\api\inc\fmod_errors.h">
-      <Filter>FMOD</Filter>
-    </ClInclude>
-    <ClInclude Include="Fmod4\api\inc\fmod_output.h">
-      <Filter>FMOD</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Fmod4\api\lib\fmodex_vc.lib">
-      <Filter>FMOD</Filter>
-    </Library>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Fmod4\api\lib\which library do I use.txt">
-      <Filter>FMOD</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Engine\fmodex.dll">
-      <Filter>DLL</Filter>
-    </None>
   </ItemGroup>
 </Project>

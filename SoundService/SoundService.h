@@ -9,8 +9,8 @@
 #include "VSoundService.h"
 #include "VSound.h"
 #include "..\common_h\CVECTOR.h"
-#include ".\FMOD4\api\inc\fmod.hpp"
-#include ".\FMOD4\api\inc\fmod_errors.h"
+#include "fmod.hpp"
+#include "fmod_errors.h"
 #include "..\common_h\templates.h"
 
 

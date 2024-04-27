@@ -67,15 +67,17 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)/extern/fmodex/api/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>dsound.lib;winmm.lib;dxerr8.lib;dxguid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dsound.lib;winmm.lib;dxerr8.lib;dxguid.lib;odbc32.lib;odbccp32.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\ENGINE\modules\SoundService.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/SoundService.pdb</ProgramDatabaseFile>
       <ImportLibrary>.\Debug/SoundService.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)/extern/fmodex/api/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -107,15 +109,17 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)/extern/fmodex/api/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>dsound.lib;winmm.lib;dxerr8.lib;dxguid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dsound.lib;winmm.lib;dxerr8.lib;dxguid.lib;odbc32.lib;odbccp32.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\ENGINE\modules\SoundService.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ProgramDatabaseFile>.\Release/SoundService.pdb</ProgramDatabaseFile>
       <ImportLibrary>.\Release/SoundService.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(SolutionDir)/extern/fmodex/api/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -144,25 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DebugEntity.h" />
-    <ClInclude Include="Fmod4\api\inc\fmod.h" />
-    <ClInclude Include="Fmod4\api\inc\fmod.hpp" />
-    <ClInclude Include="Fmod4\api\inc\fmod_codec.h" />
-    <ClInclude Include="Fmod4\api\inc\fmod_dsp.h" />
-    <ClInclude Include="Fmod4\api\inc\fmod_errors.h" />
-    <ClInclude Include="Fmod4\api\inc\fmod_output.h" />
     <ClInclude Include="SoundDefines.h" />
     <ClInclude Include="SoundService.h" />
     <ClInclude Include="VSound.h" />
     <ClInclude Include="VSoundService.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Fmod4\api\lib\fmodex_vc.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Fmod4\api\lib\which library do I use.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Engine\fmodex.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
