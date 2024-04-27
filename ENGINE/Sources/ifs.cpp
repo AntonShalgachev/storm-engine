@@ -880,13 +880,13 @@ long IFS::GetLong(SEARCH_DATA * sd, char * section_name, char * key_name)
 {
 	char buffer[256];
 	ReadString(sd,section_name,key_name,buffer,sizeof(buffer));
-	return atol(buffer);
+	return static_cast<long>(atoll(buffer));
 }
 
 long IFS::GetLong(SEARCH_DATA * sd, char * section_name, char * key_name, long def_val)
 {
 	char buffer[256];
-	if(ReadString(sd,section_name,key_name,buffer,sizeof(buffer),"")) return atol(buffer);
+	if(ReadString(sd,section_name,key_name,buffer,sizeof(buffer),"")) return static_cast<long>(atoll(buffer));
 	return def_val;
 }
 
