@@ -18,6 +18,8 @@
 class Sphere
 {
 public:
+	Sphere() {}
+
 	union
 	{
 		struct

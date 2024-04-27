@@ -23,6 +23,18 @@ extern VSYSTEM_API * _VSYSTEM_API;
 extern VAPI * _CORE_API;
 extern CONTROL_BLOCK Control_Block;
 
+// Based on CTP_Name
+#define CTP_CORE 0
+#define CTP_CREATESTATE 12
+#define CTP_EXECUTE 8
+#define CTP_INIT 7
+#define CTP_LOADSTATE 13
+#define CTP_REALIZE 9
+#define CTP_RUNSTART 14
+#define CTP_CONSTRUCTOR 5
+#define CTP_MESSAGE 11
+#define CTP_MESSAGE_SYSTEM 10
+
 #define SET_ERROR(x) {Error_Flag = true; if(x) strcpy(Last_Error,x); }
 #define GET_ERROR Last_Error
 #define CLR_ERROR {Error_Flag = false; Last_Error[0] = 0;}

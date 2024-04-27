@@ -33,6 +33,8 @@ public:
 	dword xtype;
 };
 
+#define ERROR_MESSAGE_DELAY 100000
+
 #ifdef _THROW
 #undef _THROW
 #endif

@@ -23,7 +23,7 @@ long GetToken(const char* &ps);
 static long GetLongFromString(char* &pInStr);
 static void GetSubStringFromString(const char* &pInStr,char* pOutBuf,int bufSize);
 static const char* GetNextString(const char* &pInStr);
-static char * GetTitleString(char* buf, char* &ptr, int &slen);
+static const char * GetTitleString(char* buf, const char* &ptr, int &slen);
 
 
 
@@ -143,11 +143,11 @@ static const char* GetNextString(const char* &pInStr)
 	return NULL;
 }
 
-static char * GetTitleString(char* buf, char* &ptr, int &slen)
+static const char * GetTitleString(char* buf, const char* &ptr, int &slen)
 {
 	if(buf==NULL) {slen=0;return NULL;}
 	buf[0]=0;
-	char* startp = ptr;
+	const char* startp = ptr;
 	while(ptr!=NULL)
 	{
 		// Возмем очередную строку
@@ -161,7 +161,7 @@ static char * GetTitleString(char* buf, char* &ptr, int &slen)
 			{
 				// получим id этого квеста
 				GetSubStringFromString(tmpstr,buf,256);
-				char * retVal = ptr;
+				const char * retVal = ptr;
 				// найдем конец заголовка квеста
 				while(ptr!=NULL)
 				{

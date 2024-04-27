@@ -26,7 +26,7 @@ void FMOD_ERROR(const char* szFromWhere, FMOD_RESULT result)
 {
 	if (result != FMOD_OK)
 	{
-		char* szTxtError = FMOD_ErrorString(result);
+		const char* szTxtError = FMOD_ErrorString(result);
 		api->Trace("%s error! (%d) %s", szFromWhere, result, szTxtError);
 	}
 }

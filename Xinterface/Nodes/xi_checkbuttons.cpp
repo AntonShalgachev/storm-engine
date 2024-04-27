@@ -124,7 +124,7 @@ void CXI_CHECKBUTTONS::LoadIni(INIFILE *ini1,char *name1, INIFILE *ini2,char *na
 	{
 		sprintf( pcKeyName, "section%d", n+1 );
 		if( !ReadIniString(ini1,name1, ini2,name2, pcKeyName, param, sizeof(param),"") ) break;
-		char* pTmpChar = param;
+		const char* pTmpChar = param;
 		bool bSelect = CXI_UTILS::StringGetLong( pTmpChar ) != 0;
 		bool bDisable = CXI_UTILS::StringGetLong( pTmpChar ) != 0;
 		AddButton( pTmpChar, bDisable, bSelect );
@@ -135,7 +135,7 @@ void CXI_CHECKBUTTONS::LoadIni(INIFILE *ini1,char *name1, INIFILE *ini2,char *na
 		for( n=0; n<m_aButton; n++ ) {
 			sprintf( pcKeyName, "pos%d", n+1 );
 			if( ReadIniString(ini1,name1, ini2,name2, pcKeyName, param, sizeof(param),"") ) {
-				char* pTmpChar = param;
+				const char* pTmpChar = param;
 				m_aButton[n]->bSetPos = true;
 				m_aButton[n]->pos.x = (float)CXI_UTILS::StringGetLong( pTmpChar );
 				m_aButton[n]->pos.y = (float)CXI_UTILS::StringGetLong( pTmpChar );

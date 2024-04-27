@@ -411,7 +411,6 @@ void CORE::ProcessControls()
 	}
 }
 
-static nOffSearch = 0;
 void CORE::ProcessSystemMessage(UINT iMsg,WPARAM wParam,LPARAM lParam)
 {
 	GUARD(CORE::ProcessSystemMessage)

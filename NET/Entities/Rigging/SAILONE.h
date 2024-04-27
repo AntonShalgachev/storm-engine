@@ -68,6 +68,7 @@ struct TEXTURESLIST {
 };
 
 struct SAILGEOMETRY {
+    SAILGEOMETRY() {}
     union {
         struct {float x,y,z;} v[9];
         struct
