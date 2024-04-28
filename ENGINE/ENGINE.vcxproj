@@ -45,15 +45,9 @@
     <_ProjectFileVersion>17.0.34714.143</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>.\Debug\</OutDir>
-    <IntDir>.\Debug\</IntDir>
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+    </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>.\release\</OutDir>
-    <IntDir>.\Release\</IntDir>
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+    </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -61,10 +55,6 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader />
-      <PrecompiledHeaderOutputFile>.\Debug/ENGINE.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
       <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -72,25 +62,21 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>ENGINE.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Debug/ENGINE.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
-    <Midl>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MkTypLibCompatible>true</MkTypLibCompatible>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\Debug/ENGINE.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0419</Culture>
     </ResourceCompile>
+    <PostBuildEvent>
+      <Command>powershell $(SolutionDir)\link_data.ps1 $(SolutionDir) $(ProjectDir) $(OutDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Link data to the output directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -102,11 +88,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeader />
-      <PrecompiledHeaderOutputFile>.\Release/ENGINE.pch</PrecompiledHeaderOutputFile>
       <AssemblerOutput>All</AssemblerOutput>
-      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
-      <ObjectFileName>.\Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -114,26 +96,22 @@
     <Link>
       <AdditionalOptions>/FIXED:NO %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>ENGINE.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Release/ENGINE.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
       <FixedBaseAddress>false</FixedBaseAddress>
     </Link>
-    <Midl>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MkTypLibCompatible>true</MkTypLibCompatible>
-      <SuppressStartupBanner>true</SuppressStartupBanner>
-      <TargetEnvironment>Win32</TargetEnvironment>
-      <TypeLibraryName>.\Release/ENGINE.tlb</TypeLibraryName>
-      <HeaderFileName />
-    </Midl>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0419</Culture>
     </ResourceCompile>
+    <PostBuildEvent>
+      <Command>powershell $(SolutionDir)\link_data.ps1 $(SolutionDir) $(ProjectDir) $(OutDir)</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Link data to the output directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Common_h\rands.cpp" />
@@ -444,6 +422,149 @@
   <ItemGroup>
     <Text Include="Sources\core.txt" />
     <Text Include="SOURCES\syntax.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Animals\Animals.vcxproj">
+      <Project>{bb9db2d4-9e38-4a5e-abb7-2a5f88b6b356}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Animation\Animation.vcxproj">
+      <Project>{3b443716-ae9b-4248-a312-e41f79ac3761}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Artifact\Artifact.vcxproj">
+      <Project>{b14c645b-fc96-479f-bf20-3e8a3aec93ea}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BackgroundShipTask\BackgroundShipTask.vcxproj">
+      <Project>{eaf0598b-2846-491e-bb66-d322bcd70969}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BALLSPLASH\BallSplash.vcxproj">
+      <Project>{e2c5d6f7-d929-4132-a291-74e1c47afe64}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BATTLE_INTERFACE\ibattle.vcxproj">
+      <Project>{6708983c-85e8-4fb4-b625-ac6eb831f8da}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\blade\blade.vcxproj">
+      <Project>{8a666519-a603-45da-9645-d77753adf79f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Blot\Blot.vcxproj">
+      <Project>{39cb30d9-7537-49c7-b606-3be4e5ff3390}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\CameraDialog\CameraDialog.vcxproj">
+      <Project>{13120f6c-bec8-4146-b193-c8c8ea96a864}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Collide\COLLIDE.vcxproj">
+      <Project>{f1db79e7-95a2-4df3-8807-d4ce5662b48c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Dialog\DIALOG.vcxproj">
+      <Project>{13c0fdfb-f9e7-464a-a4c8-574551366024}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DX8RENDER\DX8RENDER.vcxproj">
+      <Project>{eed7e533-1f3c-4833-8cfc-87e53b5b538a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GAMEUTILS\GAMEUTILS.vcxproj">
+      <Project>{cb0ad71f-d45e-47d2-a019-5e7782e021d7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Geometry\GEOMETRY.vcxproj">
+      <Project>{8d933582-ce95-4a3d-b65d-fe312e4b6cdb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfaceEditor\InterfaceEditor.vcxproj">
+      <Project>{3d8eb4fd-4876-45a1-ab0b-4ac5700460c2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Island\ISLAND.vcxproj">
+      <Project>{a88fb37e-4969-44cf-a073-fe718c675d53}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Lighter\Lighter.vcxproj">
+      <Project>{de525f15-43f8-48e5-99fe-4b3d7925a284}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Location\Location.vcxproj">
+      <Project>{7621a1ac-5c05-4180-914c-dc777f1f658c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Locator\LOCATOR.vcxproj">
+      <Project>{06023b6e-f152-45ce-8c54-821e11730867}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Mast\mast.vcxproj">
+      <Project>{5a7e6f0a-7c3f-4fdc-a806-25d64fc0d49e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\MODEL.vcxproj">
+      <Project>{a69ae3b4-9b14-4041-9414-5b3a58bef59b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NET\NET.vcxproj">
+      <Project>{58128499-f2f8-412a-93ab-83761ef3bb21}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PARTICLES\PARTICLES.vcxproj">
+      <Project>{e4d9495e-57e2-4058-beab-8e239038f73a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PCS_CONTROLS\PCS_CONTROLS.vcxproj">
+      <Project>{e7e9d269-73dd-4ac1-a710-af635e48fb66}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PEOPLES_ON_SHIP\PEOPLES_ON_SHIP.vcxproj">
+      <Project>{bf1948ff-aa78-49c3-8015-7af392b19d1c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rigging\RIGGING.vcxproj">
+      <Project>{e38dca56-63e1-4fd5-9451-276117830ab9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sailors\Sailors.vcxproj">
+      <Project>{050fd297-5314-43e8-9c98-0004eaea9a58}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SCRIPT_LIBRIARY\SCRIPT_LIBRIARY.vcxproj">
+      <Project>{f59d3291-62ac-494e-b854-c7402159160c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SeaCreatures\SeaCreatures.vcxproj">
+      <Project>{19abeeb2-12fc-44e7-8ad9-da27e36c30ad}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Seafoam\Seafoam.vcxproj">
+      <Project>{39c03a7a-dc0f-4177-880b-bdcadcd0a1d8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sea\SEA.vcxproj">
+      <Project>{4967a077-384e-44a8-8cc2-b78df9ae7878}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sea_ai\SEA_AI.vcxproj">
+      <Project>{bb4fa88c-a1e1-4f1d-b6ff-d9b404eccc4f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SEA_CAMERAS\SEA_CAMERAS.vcxproj">
+      <Project>{be66fc7f-c162-4902-bf64-a2921f58509e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SEA_OPERATOR\SEA_OPERATOR.vcxproj">
+      <Project>{0637662a-2207-4ee8-a34b-8d6129443833}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Setup\Setup.vcxproj">
+      <Project>{8df3c2b8-9e3c-4df3-a887-8adc34577a02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\shadow\shadow.vcxproj">
+      <Project>{703d802f-1902-446a-91be-e7511f6fb3e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Ship\SHIP.vcxproj">
+      <Project>{20906332-3a7f-4f0c-86b5-3429a839755d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SINK_EFFECT\SINK_EFFECT.vcxproj">
+      <Project>{e0519964-267f-4468-b269-e15a14dd3fb3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SoundService\SoundService.vcxproj">
+      <Project>{4e291f07-a947-455d-a78d-7382a9519888}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sound\SOUND.vcxproj">
+      <Project>{d8b50e7e-0e8f-45ac-9768-bf420978e5c2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Teleport\Teleport.vcxproj">
+      <Project>{cfe1cbfb-f18b-4fc4-894a-9a7a4fdd3c18}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tornado\Tornado.vcxproj">
+      <Project>{66454c96-de44-415a-97a1-d1b8036b3b08}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Touch\TOUCH.vcxproj">
+      <Project>{ac696cca-f30d-454f-86f8-d4defb15cd86}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WaterRings\WaterRings.vcxproj">
+      <Project>{a0015ee4-2245-4859-b30e-058a1c8fb3e1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Weather\WEATHER.vcxproj">
+      <Project>{28f1eb90-a7c5-4b45-8315-0847ac899b0a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WORLDMAP\WorldMap.vcxproj">
+      <Project>{3d6e283e-2de9-4419-8169-4261b75f4a28}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\XINTERFACE\XINTERFACE.vcxproj">
+      <Project>{c046f1e9-53f4-44df-b885-37d3e88fa2d3}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
